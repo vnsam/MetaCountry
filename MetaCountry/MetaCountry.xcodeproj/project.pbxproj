@@ -12,6 +12,10 @@
 		02A240AF22653035006E9F11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02A240AD22653035006E9F11 /* Main.storyboard */; };
 		02A240B122653036006E9F11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02A240B022653036006E9F11 /* Assets.xcassets */; };
 		02A240B422653036006E9F11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02A240B222653036006E9F11 /* LaunchScreen.storyboard */; };
+		02A240C42265397D006E9F11 /* CountryMetaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A240C22265397D006E9F11 /* CountryMetaCell.swift */; };
+		02A240C52265397D006E9F11 /* CountryMetaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02A240C32265397D006E9F11 /* CountryMetaCell.xib */; };
+		02A240C922653A94006E9F11 /* LoadMoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02A240C822653A94006E9F11 /* LoadMoreView.xib */; };
+		02A240CB22653AA7006E9F11 /* LoadMoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A240CA22653AA7006E9F11 /* LoadMoreView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		02A240B022653036006E9F11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02A240B322653036006E9F11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02A240B522653036006E9F11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02A240C22265397D006E9F11 /* CountryMetaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryMetaCell.swift; sourceTree = "<group>"; };
+		02A240C32265397D006E9F11 /* CountryMetaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryMetaCell.xib; sourceTree = "<group>"; };
+		02A240C822653A94006E9F11 /* LoadMoreView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadMoreView.xib; sourceTree = "<group>"; };
+		02A240CA22653AA7006E9F11 /* LoadMoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadMoreView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,10 +114,38 @@
 		02A240C022653410006E9F11 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				02A240C122653941006E9F11 /* Views */,
 				02A240BF22653340006E9F11 /* ViewModel */,
 				02A240BE22653333006E9F11 /* Controller */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		02A240C122653941006E9F11 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				02A240C722653A23006E9F11 /* HeaderFooter */,
+				02A240C622653A19006E9F11 /* Cell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		02A240C622653A19006E9F11 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				02A240C22265397D006E9F11 /* CountryMetaCell.swift */,
+				02A240C32265397D006E9F11 /* CountryMetaCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		02A240C722653A23006E9F11 /* HeaderFooter */ = {
+			isa = PBXGroup;
+			children = (
+				02A240C822653A94006E9F11 /* LoadMoreView.xib */,
+				02A240CA22653AA7006E9F11 /* LoadMoreView.swift */,
+			);
+			path = HeaderFooter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +209,8 @@
 				02A240B422653036006E9F11 /* LaunchScreen.storyboard in Resources */,
 				02A240B122653036006E9F11 /* Assets.xcassets in Resources */,
 				02A240AF22653035006E9F11 /* Main.storyboard in Resources */,
+				02A240C52265397D006E9F11 /* CountryMetaCell.xib in Resources */,
+				02A240C922653A94006E9F11 /* LoadMoreView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,8 +221,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02A240C42265397D006E9F11 /* CountryMetaCell.swift in Sources */,
 				02A240AC22653035006E9F11 /* HomeViewController.swift in Sources */,
 				02A240AA22653035006E9F11 /* AppDelegate.swift in Sources */,
+				02A240CB22653AA7006E9F11 /* LoadMoreView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
