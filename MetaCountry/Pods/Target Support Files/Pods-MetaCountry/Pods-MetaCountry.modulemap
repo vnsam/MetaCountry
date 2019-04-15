@@ -1,0 +1,6 @@
+framework module Pods_MetaCountry {
+  umbrella header "Pods-MetaCountry-umbrella.h"
+
+  export *
+  module * { export * }
+}
