@@ -9,7 +9,7 @@
 import Foundation
 import Firebase
 
-class Country {
+struct Country {
     private(set) var countryCode: String
     private(set) var countryName: String
     private(set) var currencyCode: String
