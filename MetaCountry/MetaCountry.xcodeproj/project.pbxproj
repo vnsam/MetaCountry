@@ -54,14 +54,62 @@
 		02A240A822653035006E9F11 /* MetaCountry */ = {
 			isa = PBXGroup;
 			children = (
-				02A240A922653035006E9F11 /* AppDelegate.swift */,
-				02A240AB22653035006E9F11 /* ViewController.swift */,
-				02A240AD22653035006E9F11 /* Main.storyboard */,
+				02A240BB226532FA006E9F11 /* ApplicationDelegate */,
+				02A240BC22653307006E9F11 /* Scene */,
+				02A240BD22653310006E9F11 /* Storyboard */,
 				02A240B022653036006E9F11 /* Assets.xcassets */,
 				02A240B222653036006E9F11 /* LaunchScreen.storyboard */,
 				02A240B522653036006E9F11 /* Info.plist */,
 			);
 			path = MetaCountry;
+			sourceTree = "<group>";
+		};
+		02A240BB226532FA006E9F11 /* ApplicationDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				02A240A922653035006E9F11 /* AppDelegate.swift */,
+			);
+			path = ApplicationDelegate;
+			sourceTree = "<group>";
+		};
+		02A240BC22653307006E9F11 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				02A240C022653410006E9F11 /* Home */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		02A240BD22653310006E9F11 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				02A240AD22653035006E9F11 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		02A240BE22653333006E9F11 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				02A240AB22653035006E9F11 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		02A240BF22653340006E9F11 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		02A240C022653410006E9F11 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				02A240BF22653340006E9F11 /* ViewModel */,
+				02A240BE22653333006E9F11 /* Controller */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
