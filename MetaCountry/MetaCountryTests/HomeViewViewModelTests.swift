@@ -88,16 +88,6 @@ class HomeViewViewModelTests: XCTestCase {
 	}
 
 	func testDelegateCallBack_WhenCountries_Appended() {
-		/*
-		let countries = [
-			Country.init(code: "IN", name: "India", currencyCode: "INR"),
-			Country.init(code: "US", name: "United States", currencyCode: "USD"),
-			Country(code: "ZW", name: "Zimbabwe", currencyCode: "ZWD")
-		]
-
-		let sut = HomeViewViewModel(countries: countries, delegate: mockHomeViewViewModelDelegate)
-		*/
-
 		XCTAssertTrue(mockHomeViewViewModelDelegate.delegateCalled)
 	}
 }
