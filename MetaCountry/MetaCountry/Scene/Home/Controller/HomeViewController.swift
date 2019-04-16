@@ -123,7 +123,7 @@ class HomeViewController: UIViewController, HomeViewViewModelDelegate, UICollect
 		if let country = viewModel.countryAtIndex(indexPath.row) {
 			let title = "Monetary Unit"
 			let message = "The currency code for \(country.countryName) is - \(country.currencyCode)"
-			alertCurrencyCode(title: title, message: message)
+			showAlert(title: title, message: message)
 		}
 	}
 }
