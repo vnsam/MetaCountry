@@ -16,6 +16,12 @@ class HomeViewViewModel {
     private let countryCode = "countryCode"
 	private let lastEntry = "ZW" // using this as end-of-page tag. Normal I'd expect JSON result to send end-of-page information. Didn't do it - since it'll add to our assignment scope.
 
+	// MARK: - Initializer
+	init(delegate: HomeViewViewModelDelegate? = nil, countries: [Country] = []) {
+		self.delegate = delegate
+		appendCountries(countries)
+	}
+
 	// viewmodel - delegate
 	weak var delegate: HomeViewViewModelDelegate?
 
@@ -28,7 +34,7 @@ class HomeViewViewModel {
 	private(set) var itemsPerPage: UInt = 0
 
 	// MARK: - Computed Properties
-	private var lastCountryCode: String? {
+	var lastCountryCode: String? {
 		return countries.last?.countryCode
 	}
 

@@ -8,4 +8,7 @@ target 'MetaCountry' do
   # Pods for MetaCountry
     pod 'Firebase/Core', :inhibit_warnings => true
     pod 'Firebase/Database', :inhibit_warnings => true
+		target 'MetaCountryTests' do
+			inherit! :search_paths
+		end
 end

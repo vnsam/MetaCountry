@@ -25,4 +25,10 @@ struct Country {
         self.countryName = countryName
         self.currencyCode = currencyCode
     }
+
+	init(code: String, name: String, currencyCode: String) {
+		self.countryCode = code
+		self.countryName = name
+		self.currencyCode = currencyCode
+	}
 }
