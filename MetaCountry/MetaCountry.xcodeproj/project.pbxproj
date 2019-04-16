@@ -23,8 +23,19 @@
 		02FA1A5E226594D000AF1904 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02FA1A5C226594D000AF1904 /* LoadingCell.xib */; };
 		02FA1A602265A9C500AF1904 /* DisplayAlertMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FA1A5F2265A9C500AF1904 /* DisplayAlertMessage.swift */; };
 		02FA1A622265AD9200AF1904 /* DataSnapshot+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FA1A612265AD9200AF1904 /* DataSnapshot+Extension.swift */; };
+		02FA1A6A2265B43C00AF1904 /* MetaCountryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FA1A692265B43C00AF1904 /* MetaCountryTests.swift */; };
 		F0C0043A7AA3175D05805648 /* Pods_MetaCountry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC966C358B3A4196E94486EC /* Pods_MetaCountry.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		02FA1A6C2265B43C00AF1904 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02A2409E22653035006E9F11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02A240A522653035006E9F11;
+			remoteInfo = MetaCountry;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		02A240A622653035006E9F11 /* MetaCountry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetaCountry.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +56,9 @@
 		02FA1A5C226594D000AF1904 /* LoadingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
 		02FA1A5F2265A9C500AF1904 /* DisplayAlertMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayAlertMessage.swift; sourceTree = "<group>"; };
 		02FA1A612265AD9200AF1904 /* DataSnapshot+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataSnapshot+Extension.swift"; sourceTree = "<group>"; };
+		02FA1A672265B43C00AF1904 /* MetaCountryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetaCountryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		02FA1A692265B43C00AF1904 /* MetaCountryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaCountryTests.swift; sourceTree = "<group>"; };
+		02FA1A6B2265B43C00AF1904 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BB77AC5846F2A54B2B08772 /* Pods-MetaCountry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetaCountry.debug.xcconfig"; path = "Target Support Files/Pods-MetaCountry/Pods-MetaCountry.debug.xcconfig"; sourceTree = "<group>"; };
 		77D4DCA4AC231811FA7B0FB2 /* Pods-MetaCountry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetaCountry.release.xcconfig"; path = "Target Support Files/Pods-MetaCountry/Pods-MetaCountry.release.xcconfig"; sourceTree = "<group>"; };
 		BC966C358B3A4196E94486EC /* Pods_MetaCountry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MetaCountry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,6 +73,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		02FA1A642265B43C00AF1904 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -66,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				02A240A822653035006E9F11 /* MetaCountry */,
+				02FA1A682265B43C00AF1904 /* MetaCountryTests */,
 				02A240A722653035006E9F11 /* Products */,
 				21A47AA69B14A61BC871FF15 /* Pods */,
 				D532CE468327BC13A9A234E5 /* Frameworks */,
@@ -76,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				02A240A622653035006E9F11 /* MetaCountry.app */,
+				02FA1A672265B43C00AF1904 /* MetaCountryTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -184,6 +207,15 @@
 			path = CustomExtensions;
 			sourceTree = "<group>";
 		};
+		02FA1A682265B43C00AF1904 /* MetaCountryTests */ = {
+			isa = PBXGroup;
+			children = (
+				02FA1A692265B43C00AF1904 /* MetaCountryTests.swift */,
+				02FA1A6B2265B43C00AF1904 /* Info.plist */,
+			);
+			path = MetaCountryTests;
+			sourceTree = "<group>";
+		};
 		21A47AA69B14A61BC871FF15 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,6 +255,24 @@
 			productReference = 02A240A622653035006E9F11 /* MetaCountry.app */;
 			productType = "com.apple.product-type.application";
 		};
+		02FA1A662265B43C00AF1904 /* MetaCountryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02FA1A6E2265B43C00AF1904 /* Build configuration list for PBXNativeTarget "MetaCountryTests" */;
+			buildPhases = (
+				02FA1A632265B43C00AF1904 /* Sources */,
+				02FA1A642265B43C00AF1904 /* Frameworks */,
+				02FA1A652265B43C00AF1904 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02FA1A6D2265B43C00AF1904 /* PBXTargetDependency */,
+			);
+			name = MetaCountryTests;
+			productName = MetaCountryTests;
+			productReference = 02FA1A672265B43C00AF1904 /* MetaCountryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -235,6 +285,10 @@
 				TargetAttributes = {
 					02A240A522653035006E9F11 = {
 						CreatedOnToolsVersion = 10.2;
+					};
+					02FA1A662265B43C00AF1904 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 02A240A522653035006E9F11;
 					};
 				};
 			};
@@ -252,6 +306,7 @@
 			projectRoot = "";
 			targets = (
 				02A240A522653035006E9F11 /* MetaCountry */,
+				02FA1A662265B43C00AF1904 /* MetaCountryTests */,
 			);
 		};
 /* End PBXProject section */
@@ -267,6 +322,13 @@
 				02A240B122653036006E9F11 /* Assets.xcassets in Resources */,
 				02A240AF22653035006E9F11 /* Main.storyboard in Resources */,
 				02A240C52265397D006E9F11 /* CountryMetaCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02FA1A652265B43C00AF1904 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,7 +403,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		02FA1A632265B43C00AF1904 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02FA1A6A2265B43C00AF1904 /* MetaCountryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02FA1A6D2265B43C00AF1904 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02A240A522653035006E9F11 /* MetaCountry */;
+			targetProxy = 02FA1A6C2265B43C00AF1904 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		02A240AD22653035006E9F11 /* Main.storyboard */ = {
@@ -517,6 +595,46 @@
 			};
 			name = Release;
 		};
+		02FA1A6F2265B43C00AF1904 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CRM3YBFTT8;
+				INFOPLIST_FILE = MetaCountryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zigzag.MetaCountryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MetaCountry.app/MetaCountry";
+			};
+			name = Debug;
+		};
+		02FA1A702265B43C00AF1904 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CRM3YBFTT8;
+				INFOPLIST_FILE = MetaCountryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zigzag.MetaCountryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MetaCountry.app/MetaCountry";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -534,6 +652,15 @@
 			buildConfigurations = (
 				02A240B922653036006E9F11 /* Debug */,
 				02A240BA22653036006E9F11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02FA1A6E2265B43C00AF1904 /* Build configuration list for PBXNativeTarget "MetaCountryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02FA1A6F2265B43C00AF1904 /* Debug */,
+				02FA1A702265B43C00AF1904 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
