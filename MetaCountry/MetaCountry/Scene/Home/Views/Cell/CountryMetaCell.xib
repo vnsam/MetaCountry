@@ -19,9 +19,9 @@
                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Gu-lT-Ka5">
-                        <rect key="frame" x="8" y="28" width="34" height="14"/>
-                        <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="12"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Gu-lT-Ka5">
+                        <rect key="frame" x="8" y="26" width="34" height="16"/>
+                        <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -33,6 +33,7 @@
                     </label>
                 </subviews>
             </view>
+            <color key="backgroundColor" red="0.2156862745" green="0.50196078430000002" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="5Gu-lT-Ka5" secondAttribute="bottom" constant="8" id="1O2-Aq-5m0"/>
                 <constraint firstItem="5Gu-lT-Ka5" firstAttribute="leading" secondItem="ZRz-I0-PEi" secondAttribute="leading" constant="8" id="9Cd-Ml-sf0"/>
@@ -42,6 +43,10 @@
                 <constraint firstAttribute="trailing" secondItem="9o2-c6-Srh" secondAttribute="trailing" constant="8" id="oX9-JU-hcs"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="WV9-XI-KQ5"/>
+            <connections>
+                <outlet property="countryCodeLabel" destination="9o2-c6-Srh" id="Hk7-ds-Ifk"/>
+                <outlet property="countryNameLabel" destination="5Gu-lT-Ka5" id="9V1-NL-Pti"/>
+            </connections>
             <point key="canvasLocation" x="-214.49275362318843" y="6.6964285714285712"/>
         </collectionViewCell>
     </objects>

@@ -9,10 +9,10 @@
 import UIKit
 
 class LoadingCell: UICollectionViewCell {
-	// MARK:- Constants
+	// MARK: - Constants
 	static let identifier = "LoadingCell"
 
-	// MARK:- Outlets
+	// MARK: - Outlets
 	@IBOutlet weak var acitivtyIndicator: UIActivityIndicatorView!
 
 	func showLoadingIndicator() {

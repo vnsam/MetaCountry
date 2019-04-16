@@ -9,10 +9,15 @@
 import UIKit
 
 class CountryMetaCell: UICollectionViewCell {
+	// MARK: - Constants
+	static let identifier = "CountryMetaCell"
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
+	// MARK: - Outlets
+	@IBOutlet weak var countryCodeLabel: UILabel!
+	@IBOutlet weak var countryNameLabel: UILabel!
 
+	func setText(countryCode: String?, countryName: String?, currencyCode: String?) {
+		countryCodeLabel.text = countryCode
+		countryNameLabel.text = countryName
+	}
 }
