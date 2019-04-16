@@ -7,3 +7,11 @@
 //
 
 import Foundation
+import FirebaseDatabase
+
+extension DataSnapshot {
+	var dictionaryFromValue: [String: AnyObject]? {
+		guard let valueDictionary = self.value as? [String: AnyObject] else { return nil }
+		return valueDictionary
+	}
+}
