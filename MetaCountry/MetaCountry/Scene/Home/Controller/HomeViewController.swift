@@ -30,8 +30,6 @@ class HomeViewController: UIViewController, HomeViewViewModelDelegate, UICollect
 
 		registerViewModelDelegate()
 
-		collectionView.invert()
-
 		setupUI()
     }
 
