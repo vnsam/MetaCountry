@@ -60,13 +60,21 @@ class HomeViewController: UIViewController, HomeViewViewModelDelegate, UICollect
 
 	// MARK: - UI Update
 	private func setupUI() {
+		registerCellNibs()
+
+		setupCollectionView()
+	}
+
+	private func setupCollectionView() {
+		collectionView.invert()
+	}
+
+	private func registerCellNibs() {
 		let countryMetaCellNib = UINib(nibName: "CountryMetaCell", bundle: nil)
 		collectionView.register(countryMetaCellNib, forCellWithReuseIdentifier: CountryMetaCell.identifier)
 
 		let loadingCellNib = UINib(nibName: "LoadingCell", bundle: nil)
 		collectionView.register(loadingCellNib, forCellWithReuseIdentifier: LoadingCell.identifier)
-
-		collectionView.invert()
 	}
 
 	// MARK: - UICollectionViewDataSource
