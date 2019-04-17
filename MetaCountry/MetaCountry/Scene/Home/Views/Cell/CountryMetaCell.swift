@@ -16,7 +16,7 @@ class CountryMetaCell: UICollectionViewCell {
 	@IBOutlet weak var countryCodeLabel: UILabel!
 	@IBOutlet weak var countryNameLabel: UILabel!
 
-	func setText(countryCode: String?, countryName: String?, currencyCode: String?) {
+	func setText(countryCode: String?, countryName: String?) {
 		countryCodeLabel.text = countryCode
 		countryNameLabel.text = countryName
 	}

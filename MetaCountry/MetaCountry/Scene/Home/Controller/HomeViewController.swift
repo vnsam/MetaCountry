@@ -102,7 +102,7 @@ class HomeViewController: UIViewController, HomeViewViewModelDelegate, UICollect
 
 		let country = viewModel.countryAtIndex(indexPath.row)
 
-		cell.setText(countryCode: country?.countryCode, countryName: country?.countryName, currencyCode: country?.currencyCode)
+		cell.setText(countryCode: country?.countryCode, countryName: country?.countryName)
 
 		return cell
 	}
